@@ -1,52 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>practice-1</title>
-  <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css">
   </head>
-  <body>
-<header class="w-1320px border">
-  <div class=" m-auto container">
-    <div class="nav-wrapper">
-      <nav class="m-auto flex items-center justify-around">
-        <div>
-          <img src="./src/logo/worktap 1.svg" alt="">
+
+  <body class="font-[Montserrat] pt-[30px] h-auto m-auto">
+
+    <!-- ✅ Faqat shu WRAPPER ichida fon bo‘ladi -->
+    <div class="bg-[#F7F6FF] w-full">
+
+      <!-- HEADER -->
+      <header class="w-[1320px] m-auto">
+        <nav class="flex items-center justify-between py-5">
+          <img src="./src/logo/worktap 1.svg" alt="" />
+
+          <ul class="flex gap-10">
+            <li><a href="#">Биржа</a></li>
+            <li><a href="#">Ворки</a></li>
+            <li><a href="#">Конкурсы</a></li>
+            <li><a href="#">Создать ворк</a></li>
+            <li><a href="#">Создать заказ</a></li>
+          </ul>
+
+          <div class="flex gap-5">
+            <button class="text-2xl text-[#1DBF73]">Регистрация</button>
+            <button class="bg-[#1DBF73] text-white px-6 py-2 rounded-xl">Войти</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section class="w-[1320px] mx-auto flex justify-between gap-[120px] py-[60px]">
+        <div class="left">
+          <h1 class="text-4xl leading-[100%] py-[60px]">
+            Покупайте фриланс-услуги в <br>
+            <span class="text-green-600">два клика</span>
+          </h1>
+
+          <p class="text-[20px] leading-[120%]">
+            Ворк — единица работы продавца, которую можно купить как товар
+          </p>
+
+          <div class="flex items-center h-[60px] w-[532px] border bg-[#F2F0FE] rounded-[50px] my-[30px] px-4">
+            <input type="text" placeholder="Что нужно сделать?" class="flex-1 bg-transparent outline-none"/>
+            <button class="bg-[#FBA457] text-white rounded-[30px] w-[154px] h-[48px]">Найти</button>
+          </div>
+
+          <span class="text-[16px] text-[#222]">Выберите рубрику, чтобы начать</span>
+
+          <div class="flex gap-5 mt-5">
+            <button class="flex items-center gap-2 border border-[#1DBF73] text-[#1DBF73] rounded-[30px] px-4 py-1">
+              <img src="./src/icons/ChevronDownMinor 1.svg">Дизайн
+            </button>
+            <p>Дизайн сайтов</p>
+            <p>Дизайн логотипа</p>
+          </div>
+
+          <div class="flex gap-5 mt-5">
+            <p>Дизайн визиток</p>
+            <p>Арт и иллюстрации</p>
+            <p>Флаера и брошюры</p>
+          </div>
+
+          <div class="flex gap-5 mt-5">
+            <p>Баннеры и стенды</p>
+            <p>Дизайн презентации</p>
+            <button class="border border-[#FBA457] rounded-[30px] px-5 py-1 text-[#FBA457]">
+              Все подкатегории
+            </button>
+          </div>
         </div>
-        <ul class="flex gap-10">
-          <li>
-            <a href="#"><span>Биржа</span></a>
-          </li>
-                    <li>
-            <a href="#"><span>ВоркиКонкурсы</span></a>
-          </li>
-                    <li>
-            <a href="#"><span>Конкурсы</span></a>
-          </li>
-                    <li>
-            <a href="#"><span>Создать ворк</span></a>
-          </li>
-                    <li>
-            <a href="#"><span>Создать заказ</span></a>
-          </li>
-        </ul>
-      <div class="btn gap-10">
-          <button class="text-2xl text-[#1DBF73]">Регистрация</button>
-        <button class=" bg-color:#1DBF73;">Войти</button>
-      </div>
-      </nav>
+
+        <div class="my-[38px]">
+          <img src="./src/images/Group 11.png" alt="">
+        </div>
+      </section>
     </div>
-  </div>
-</header>
-<section class="hero">
-<div class="hero-item">
-  <div class="left">
-    <h1>Покупайте фриланс-услуги в два клика</h1>
-    <p>Ворк — единица работы продавца, которую можно купить как товар в магазине </p>
-  </div>
-</div>
-</section>
+
+    <!-- PASTKI QISM—oq fon bilan boshlanadi -->
+    <section class="bg-white py-16">
+      <div class="w-[1320px] mx-auto">
+
+        <h3 class="text-3xl font-semibold mb-8">Актуальные ворки</h3>
+
+        <div class="p-6 border rounded-2xl shadow-sm w-[400px] bg-white">
+          <img src="./src/images/image-work1.png" alt="" class="rounded-xl mb-4">
+
+          <span class="block text-xl font-semibold mb-3">
+            Сделать дизайн интернет-магазина
+          </span>
+
+          <p class="text-[#333] leading-[150%] mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo...
+          </p>
+
+          <button class="bg-[#1DBF73] text-white px-6 py-2 rounded-xl">
+            Посмотреть
+          </button>
+        </div>
+
+      </div>
+    </section>
+
   </body>
 </html>
